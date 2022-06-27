@@ -29,6 +29,7 @@ const Countries = () => {
 			<h1>COUNTRIES</h1>
 			<ul className="radio-container">
 				{/* tri du nb d'els affichés */}
+				<label> Nombre de pays : {rangeValue} </label>
 				<input
 					type="range"
 					min="1"
@@ -39,6 +40,7 @@ const Countries = () => {
 					}}
 					id="show-country"
 				/>
+
 				{/* creation des btn radio */}
 				{radios.map((continent) => (
 					<li>
